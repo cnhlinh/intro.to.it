@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    
+}
+
+nav{
+    background-color: #FF8BA0;
+}
+
+label.logo{
+    font-family: 'Montserrat',sans-serif;
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 80px;
+    font-weight: bold;
+}
+label a{
+    color: white;
+}
+nav:after{
+    content: " ";
+    clear: both;
+    display: table;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li{
+    float: left;
+    display: inline-block;
+    background-color: #FF8BA0;
+    line-height: 30px;
+    margin: 5 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 25px 13px;
+    border-radius: 1px;
+    top: 80px;
+    display: inline-block;
+    text-align: center;
+}
+
+nav ul li:hover{
+    background-color: salmon;
+    transition: .5s;
+}
+
+nav ul ul{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .5s;
+}
+
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li{
+    position: relative;
+    padding: 0px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid white;
+}
+
+nav ul ul li:hover{
+    background-color: salmon;
+}
+
+nav ul ul ul li{
+    position: relative;
+}
+
+a.logo,a:hover{
+    background: salmon;
+    transition: .5s;
+}
+
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 2%;
+    color: #FF8BA0;
+    text-transform: uppercase;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding-top: 3%;
+}
+  
+.text{
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.517);
+}
+.moreText{
+    display: none;
+}
+.read-more-btn {
+    display: inline-block;
+}
+.text.show-more .moreText {
+    display: inline;
+}
+.text.show-more .dots {
+    display: none;
+}
+
+.text{
+    text-indent: 2%;
+    text-align: justify;
+    font-size: large;
+    line-height: 2;
+    margin: 20px;
+}
+
